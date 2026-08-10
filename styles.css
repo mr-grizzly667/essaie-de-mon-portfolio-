@@ -1,3 +1,11 @@
 h1{
     background: blue;
 }
+
+
+body,
+html{
+    min-height: auto;
+    background: #f1f1f1;
+
+}
