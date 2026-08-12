@@ -1,13 +1,318 @@
-html <!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mon chrere </title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grisli Koffi — Développeur Full-Stack &amp; Étudiant en Génie Informatique</title>
+<meta name="description" content="Portfolio de KOFFI TOA Arnaud Ghislain (Grisli) — Développeur full-stack, étudiant en Génie Informatique à l'IUA, stagiaire ARTCI/NIC.CI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css     ">
 </head>
 <body>
-    <h1>grizlly</h1>
-    <script src="script.js"></script>
+
+<div class="grain"></div>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#top" class="nav__logo">
+      <span class="nav__logo-mark">./</span>grisli<span class="nav__logo-dot">.ci</span>
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#about"><span class="nav__num">01</span>À propos</a>
+      <a href="#skills"><span class="nav__num">02</span>Stack</a>
+      <a href="#experience"><span class="nav__num">03</span>Parcours</a>
+      <a href="#projects"><span class="nav__num">04</span>Projets</a>
+      <a href="#contact"><span class="nav__num">05</span>Contact</a>
+    </nav>
+    <a href="#contact" class="nav__cta">Me contacter</a>
+    <button class="nav__burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="hero">
+    <div class="hero__inner">
+      <div class="hero__text">
+        <p class="eyebrow"><span class="eyebrow__pulse"></span> disponible pour stage / alternance / freelance</p>
+        <h1 class="hero__title">
+          Je conçois des systèmes,<br>
+          pas juste des interfaces.
+        </h1>
+        <p class="hero__lead">
+          Étudiant en Génie Informatique à l'<strong>IUA</strong> (Abidjan), actuellement en stage à l'<strong>ARTCI</strong>
+          sur la plateforme <strong>NIC.CI</strong> — le registre du domaine national <strong>.ci</strong>.
+          Je construis des applications full-stack, de l'architecture réseau aux interfaces.
+        </p>
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary">Voir mes projets</a>
+          <a href="#contact" class="btn btn--ghost">Discutons</a>
+        </div>
+      </div>
+
+      <div class="hero__panel">
+        <div class="whois" id="whois">
+          <div class="whois__bar">
+            <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+            <span class="whois__title">whois --record grisli.ci</span>
+          </div>
+          <pre class="whois__body" id="whoisBody" aria-label="Fiche de présentation façon enregistrement de domaine"></pre>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="hero__scroll" aria-label="Défiler vers la section suivante">
+      <span></span>scroll
+    </a>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="section" id="about">
+    <div class="section__head">
+      <span class="section__num">01</span>
+      <h2 class="section__title">À propos</h2>
+    </div>
+
+    <div class="about__grid">
+      <div class="about__lead">
+        <p>
+          Je m'appelle <strong>Arnaud Ghislain KOFFI TOA</strong>, on m'appelle <strong>Grisli</strong>.
+          Basé à Abidjan, je termine ma formation en Génie Informatique à l'Institut Universitaire
+          d'Abidjan, sous la supervision du Dr YAO Cédrick.
+        </p>
+        <p>
+          Mon quotidien technique se partage entre le développement d'applications
+          <strong>full-stack</strong> (React, NestJS, PostgreSQL) et des sujets plus « infrastructure » —
+          serveurs, réseaux, documentation technique — dans le cadre de mon stage au sein de
+          l'<strong>ARTCI</strong>, l'autorité de régulation des télécommunications de Côte d'Ivoire,
+          sur le registre <strong>NIC.CI</strong>.
+        </p>
+        <p>
+          En parallèle, je co-fonde <strong>Skanfy</strong>, une startup de récupération d'objets perdus
+          basée sur des QR codes, et je prépare ma certification <strong>CCNA</strong>.
+          J'aime les systèmes bien pensés : une base de données propre, une architecture claire,
+          une interface qui ne fait pas plus de bruit que nécessaire.
+        </p>
+      </div>
+
+      <ul class="about__facts">
+        <li><span>Localisation</span>Abidjan, Côte d'Ivoire</li>
+        <li><span>Formation</span>Génie Informatique — IUA</li>
+        <li><span>Stage en cours</span>ARTCI — Plateforme NIC.CI</li>
+        <li><span>Projet perso</span>Skanfy — QR &amp; objets perdus</li>
+        <li><span>En cours</span>Certification CCNA</li>
+        <li><span>Langues</span>Français, Anglais technique</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+  <section class="section section--alt" id="skills">
+    <div class="section__head">
+      <span class="section__num">02</span>
+      <h2 class="section__title">Stack &amp; compétences</h2>
+    </div>
+
+    <div class="stack">
+      <div class="stack__col">
+        <h3 class="stack__label">Frontend</h3>
+        <ul class="tag-list">
+          <li>React 19 / Vite</li>
+          <li>JavaScript / TypeScript</li>
+          <li>HTML5 &amp; CSS3</li>
+          <li>Recharts</li>
+        </ul>
+      </div>
+      <div class="stack__col">
+        <h3 class="stack__label">Backend</h3>
+        <ul class="tag-list">
+          <li>NestJS 11</li>
+          <li>Node.js</li>
+          <li>PHP (MVC)</li>
+          <li>API REST</li>
+        </ul>
+      </div>
+      <div class="stack__col">
+        <h3 class="stack__label">Données &amp; infra</h3>
+        <ul class="tag-list">
+          <li>PostgreSQL / Prisma</li>
+          <li>MySQL</li>
+          <li>Nginx / PM2</li>
+          <li>Let's Encrypt</li>
+        </ul>
+      </div>
+      <div class="stack__col">
+        <h3 class="stack__label">Réseaux &amp; outils</h3>
+        <ul class="tag-list">
+          <li>Notions CCNA</li>
+          <li>Git / GitHub</li>
+          <li>MERISE</li>
+          <li>GLPI</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EXPERIENCE ================= -->
+  <section class="section" id="experience">
+    <div class="section__head">
+      <span class="section__num">03</span>
+      <h2 class="section__title">Parcours</h2>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline__item">
+        <div class="timeline__date">2025 — présent</div>
+        <div class="timeline__content">
+          <h3>Stagiaire Développeur — ARTCI / NIC.CI</h3>
+          <p>
+            Travail sur la plateforme NIC.CI, le registre du ccTLD .ci : analyse d'architecture,
+            documentation technique (configurations serveurs, flux de communication),
+            benchmarking des registres africains et supports de présentation pour l'équipe.
+          </p>
+        </div>
+      </div>
+      <div class="timeline__item">
+        <div class="timeline__date">2024 — 2025</div>
+        <div class="timeline__content">
+          <h3>Mémoire de Licence — IUA</h3>
+          <p>
+            Conception et développement d'une application web de gestion des inscriptions
+            étudiantes (PHP MVC, MySQL, Bootstrap) avec intégration Mobile Money
+            (Wave, Orange, MTN), méthodologie MERISE.
+          </p>
+        </div>
+      </div>
+      <div class="timeline__item">
+        <div class="timeline__date">En continu</div>
+        <div class="timeline__content">
+          <h3>Co-fondateur — Skanfy</h3>
+          <p>
+            Startup de récupération d'objets perdus par QR code, développée avec un collaborateur.
+            Analyse business, stratégie de partenariats institutionnels, modèle budgétaire.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section class="section section--alt" id="projects">
+    <div class="section__head">
+      <span class="section__num">04</span>
+      <h2 class="section__title">Projets</h2>
+    </div>
+
+    <div class="projects">
+      <article class="project">
+        <div class="project__index">P.01</div>
+        <h3>Centre de pilotage personnel</h3>
+        <p>
+          Plateforme de planification personnelle, initialement une SPA React avec timeline
+          temps réel et statistiques (Recharts), en cours d'évolution vers un système
+          multi-utilisateur NestJS / PostgreSQL / Prisma avec authentification sécurisée
+          (JWT en cookie HttpOnly, argon2, RBAC).
+        </p>
+        <ul class="project__tags">
+          <li>React</li><li>NestJS</li><li>PostgreSQL</li><li>Prisma</li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <div class="project__index">P.02</div>
+        <h3>Skanfy</h3>
+        <p>
+          Service de récupération d'objets perdus basé sur des QR codes à coller sur ses
+          biens : un scan, et le propriétaire est notifié. Co-construit avec un collaborateur,
+          de l'idée au modèle économique.
+        </p>
+        <ul class="project__tags">
+          <li>QR Code</li><li>Startup</li><li>Produit</li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <div class="project__index">P.03</div>
+        <h3>Documentation technique NIC.CI</h3>
+        <p>
+          Ensemble de livrables pour ARTCI : guides de préparation serveur, inventaires de
+          dépendances, diagrammes de flux de communication et présentations dans l'identité
+          visuelle de l'ARTCI.
+        </p>
+        <ul class="project__tags">
+          <li>Architecture</li><li>Documentation</li><li>Réseaux</li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <div class="project__index">P.04</div>
+        <h3>Gestion des inscriptions — IUA</h3>
+        <p>
+          Application de gestion des inscriptions étudiantes avec paiement Mobile Money
+          intégré, conçue selon la méthode MERISE, réalisée comme mémoire de fin de licence.
+        </p>
+        <ul class="project__tags">
+          <li>PHP MVC</li><li>MySQL</li><li>Mobile Money</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="section contact" id="contact">
+    <div class="section__head">
+      <span class="section__num">05</span>
+      <h2 class="section__title">Contact</h2>
+    </div>
+
+    <div class="contact__grid">
+      <div class="contact__text">
+        <p class="contact__big">
+          Un projet, un stage, une idée à en discuter&nbsp;?
+        </p>
+        <p>
+          Je réponds volontiers aux échanges autour du développement web, des architectures
+          full-stack ou des sujets réseaux. Écrivez-moi, ou passez par le formulaire.
+        </p>
+        <ul class="contact__list">
+          <li><span>Email</span><a href="mailto:contact@exemple.com">contact@exemple.com</a></li>
+          <li><span>Localisation</span>Abidjan, Côte d'Ivoire</li>
+          <li><span>Réseaux</span><a href="#" target="_blank" rel="noopener">LinkedIn</a> · <a href="#" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </div>
+
+      <form class="contact__form" id="contactForm" novalidate>
+        <div class="field">
+          <label for="name">Nom</label>
+          <input type="text" id="name" name="name" required placeholder="Votre nom">
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="vous@exemple.com">
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required placeholder="Votre message..."></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">Envoyer le message</button>
+        <p class="field__status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© <span id="year"></span> Grisli Koffi — construit avec HTML, CSS &amp; JS.</p>
+  <a href="#top" class="footer__top">Haut de page ↑</a>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
