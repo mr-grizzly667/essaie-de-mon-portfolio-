@@ -58,8 +58,8 @@ window.addEventListener('scroll', () => {
    5. ANIMATIONS AU SCROLL (reveal)
 ========================================================= */
 const revealTargets = document.querySelectorAll(
-  '.section__head, .about__lead, .about__facts, .stack__col, ' +
-  '.timeline__item, .project, .contact__text, .contact__form'
+  '.section__head, .about__lead, .about__facts, .about-explore, .vision-card, .stack__col, ' +
+  '.timeline__item, .project, .initiatives-intro, .initiative-card, .contact__text, .contact__form'
 );
 revealTargets.forEach(el => el.classList.add('reveal'));
 
@@ -74,73 +74,72 @@ const revealObserver = new IntersectionObserver((entries) => {
 
 revealTargets.forEach(el => revealObserver.observe(el));
 
-/* =========================================================
-   6. TERMINAL "WHOIS" — effet machine à écrire (hero, élément signature)
-========================================================= */
-const whoisBody = document.getElementById('whoisBody');
+/* Profil: les valeurs s'écrivent une fois quand la fiche entre à l'écran. */
+const profileCard = document.getElementById('whois');
+if (profileCard) {
+  const profileValues = [...profileCard.querySelectorAll('.whois__body .v')];
+  const fullValues = profileValues.map(value => value.textContent);
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  let profileAnimationStarted = false;
 
-const whoisLines = [
-  { k: 'Domaine',        v: 'grisli.ci' },
-  { k: 'Titulaire',      v: 'KOFFI TOA Arnaud Ghislain' },
-  { k: 'Alias',          v: 'Grisli' },
-  { k: 'Statut',         v: 'ACTIF — disponible', status: true },
-  { k: 'Registre',       v: 'IUA — Génie Informatique' },
-  { k: 'Serveur actuel', v: 'stage.artci.ci / nic.ci' },
-  { k: 'Projet associé', v: 'skanfy (co-fondateur)' },
-  { k: 'Certification',  v: 'CCNA — en préparation' },
-  { k: 'Localisation',   v: 'Abidjan, Côte d\'Ivoire' },
-];
+  const typeProfile = () => {
+    if (profileAnimationStarted || reduceMotion.matches) return;
+    profileAnimationStarted = true;
+    profileValues.forEach(value => { value.textContent = ''; });
 
-function typeWhois() {
-  whoisBody.innerHTML = '';
-  let lineIndex = 0;
+    let row = 0;
+    const typeRow = () => {
+      const value = profileValues[row];
+      const fullText = fullValues[row];
+      let character = 0;
+      value.classList.add('is-typing');
 
-  function typeLine() {
-    const line = whoisLines[lineIndex];
-    const label = `${line.k}:`.padEnd(16, ' ');
-    const full  = label + line.v;
-
-    const lineEl = document.createElement('div');
-    lineEl.innerHTML = `<span class="k">${label}</span><span class="${line.status ? 'status' : 'v'}"></span>`;
-    whoisBody.appendChild(lineEl);
-    const valueSpan = lineEl.querySelector('span:last-child');
-
-    let charIndex = 0;
-    (function step() {
-      valueSpan.textContent = full.slice(label.length, label.length + charIndex + 1);
-      charIndex++;
-      if (label.length + charIndex <= full.length) {
-        setTimeout(step, 22 + Math.random() * 30);
-      } else {
-        lineIndex++;
-        if (lineIndex < whoisLines.length) {
-          setTimeout(typeLine, 120);
-        } else {
-          const cursor = document.createElement('span');
-          cursor.className = 'whois__cursor';
-          whoisBody.appendChild(cursor);
+      const typeCharacter = () => {
+        value.textContent = fullText.slice(0, character + 1);
+        character += 1;
+        if (character < fullText.length) {
+          window.setTimeout(typeCharacter, 24);
+          return;
         }
-      }
-    })();
-  }
 
-  typeLine();
+        value.classList.remove('is-typing');
+        row += 1;
+        if (row < profileValues.length) window.setTimeout(typeRow, 120);
+      };
+
+      typeCharacter();
+    };
+
+    typeRow();
+  };
+
+  if (reduceMotion.matches) {
+    profileAnimationStarted = true;
+  } else {
+    const profileObserver = new IntersectionObserver(entries => {
+      if (entries.some(entry => entry.isIntersecting)) {
+        profileObserver.disconnect();
+        typeProfile();
+      }
+    }, { threshold: 0.3 });
+    profileObserver.observe(profileCard);
+  }
 }
 
-// ne lance l'animation qu'une fois, quand le hero devient visible
-const whoisObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      typeWhois();
-      whoisObserver.disconnect();
-    }
+/* =========================================================
+   6. CARTES INTERACTIVES — une seule carte ouverte à la fois
+========================================================= */
+document.querySelectorAll('.focus-card').forEach((card) => {
+  card.addEventListener('toggle', () => {
+    if (!card.open) return;
+    document.querySelectorAll('.focus-card').forEach((otherCard) => {
+      if (otherCard !== card) otherCard.open = false;
+    });
   });
-}, { threshold: 0.3 });
-
-whoisObserver.observe(document.getElementById('whois'));
+});
 
 /* =========================================================
-   7. FORMULAIRE DE CONTACT (démo front-end uniquement)
+   7. FORMULAIRE DE CONTACT (ouvre la messagerie)
 ========================================================= */
 const form   = document.getElementById('contactForm');
 const status = document.getElementById('formStatus');
@@ -164,8 +163,9 @@ form.addEventListener('submit', (e) => {
     return;
   }
 
-  // Ici, brancher un vrai envoi (API, EmailJS, Formspree, etc.)
-  status.textContent = `Merci ${name}, votre message a bien été préparé. (Branchez un service d'envoi pour l'expédier réellement.)`;
+  const subject = encodeURIComponent(`Message de ${name} depuis le portfolio`);
+  const body = encodeURIComponent(`${message}\n\nRéponse à : ${email}`);
+  status.textContent = 'Votre application de messagerie va s’ouvrir pour envoyer le message.';
   status.style.color = '';
-  form.reset();
+  window.location.href = `mailto:koffitoaghislain@gmail.com?subject=${subject}&body=${body}`;
 });

@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="62" y1="38" x2="1100" y2="640" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1E3025"/><stop offset="1" stop-color="#111914"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#D8F0B4"/><stop offset="1" stop-color="#8FBC59"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000" flood-opacity=".28"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="680" rx="26" fill="url(#bg)"/>
+  <rect x="1" y="1" width="1198" height="678" rx="25" stroke="#9BC765" stroke-opacity=".2"/>
+  <rect x="0" y="0" width="228" height="680" rx="26" fill="#101713"/>
+  <path d="M228 0v680" stroke="#9BC765" stroke-opacity=".14"/>
+  <rect x="30" y="34" width="42" height="42" rx="13" fill="#263923"/>
+  <path d="M43 56h16M51 48v16" stroke="#D8F0B4" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="87" y="52" fill="#F1F2EB" font-family="Arial,sans-serif" font-size="16" font-weight="700">PILOTAGE</text>
+  <text x="87" y="69" fill="#839080" font-family="Arial,sans-serif" font-size="10" letter-spacing="1.6">ESPACE PERSONNEL</text>
+  <rect x="20" y="112" width="188" height="42" rx="10" fill="#263923"/>
+  <circle cx="43" cy="133" r="5" fill="#B8DC84"/>
+  <text x="59" y="138" fill="#E7F1DA" font-family="Arial,sans-serif" font-size="13">Vue d'ensemble</text>
+  <circle cx="43" cy="187" r="5" stroke="#839080" stroke-width="1.5"/>
+  <text x="59" y="192" fill="#AEB9AD" font-family="Arial,sans-serif" font-size="13">Mes tâches</text>
+  <circle cx="43" cy="235" r="5" stroke="#839080" stroke-width="1.5"/>
+  <text x="59" y="240" fill="#AEB9AD" font-family="Arial,sans-serif" font-size="13">Projets</text>
+  <circle cx="43" cy="283" r="5" stroke="#839080" stroke-width="1.5"/>
+  <text x="59" y="288" fill="#AEB9AD" font-family="Arial,sans-serif" font-size="13">Historique</text>
+  <rect x="27" y="612" width="34" height="34" rx="17" fill="#29382D"/>
+  <text x="44" y="634" text-anchor="middle" fill="#D8F0B4" font-family="Arial,sans-serif" font-size="12" font-weight="700">A</text>
+  <text x="72" y="626" fill="#E7EDE4" font-family="Arial,sans-serif" font-size="12">Mon espace</text>
+  <text x="72" y="641" fill="#839080" font-family="Arial,sans-serif" font-size="10">Organisation personnelle</text>
+  <text x="274" y="61" fill="#9BC765" font-family="Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="2">TABLEAU DE BORD</text>
+  <text x="274" y="101" fill="#F1F2EB" font-family="Arial,sans-serif" font-size="30" font-weight="700">Bonjour, Arnaud</text>
+  <text x="274" y="127" fill="#AEB9AD" font-family="Arial,sans-serif" font-size="13">Un aperçu clair de ce qui avance.</text>
+  <rect x="1039" y="48" width="122" height="38" rx="19" fill="#263923" stroke="#9BC765" stroke-opacity=".24"/>
+  <circle cx="1060" cy="67" r="4" fill="#9BC765"/>
+  <text x="1073" y="71" fill="#D9EDC0" font-family="Arial,sans-serif" font-size="11">À jour</text>
+  <g filter="url(#shadow)">
+    <rect x="274" y="158" width="272" height="116" rx="15" fill="#1A271E" stroke="#9BC765" stroke-opacity=".16"/>
+    <rect x="562" y="158" width="272" height="116" rx="15" fill="#1A271E" stroke="#9BC765" stroke-opacity=".16"/>
+    <rect x="850" y="158" width="311" height="116" rx="15" fill="#1A271E" stroke="#9BC765" stroke-opacity=".16"/>
+  </g>
+  <text x="297" y="190" fill="#AEB9AD" font-family="Arial,sans-serif" font-size="12">À faire</text>
+  <text x="297" y="229" fill="#F1F2EB" font-family="Arial,sans-serif" font-size="25" font-weight="700">Mes prochaines étapes</text>
+  <path d="M297 249h202" stroke="#9BC765" stroke-opacity=".18"/>
+  <circle cx="585" cy="187" r="7" fill="#8FBC59" fill-opacity=".2"/><circle cx="585" cy="187" r="3" fill="#B8DC84"/>
+  <text x="603" y="191" fill="#AEB9AD" font-family="Arial,sans-serif" font-size="12">En cours</text>
+  <text x="585" y="229" fill="#F1F2EB" font-family="Arial,sans-serif" font-size="25" font-weight="700">Suivi des projets</text>
+  <path d="M585 249h202" stroke="#9BC765" stroke-opacity=".18"/>
+  <text x="873" y="190" fill="#AEB9AD" font-family="Arial,sans-serif" font-size="12">Avancement général</text>
+  <text x="873" y="229" fill="#F1F2EB" font-family="Arial,sans-serif" font-size="25" font-weight="700">Garder le cap</text>
+  <path d="M873 249h222" stroke="#9BC765" stroke-opacity=".18"/>
+  <rect x="274" y="298" width="565" height="330" rx="15" fill="#18231B" stroke="#9BC765" stroke-opacity=".16"/>
+  <text x="299" y="334" fill="#F1F2EB" font-family="Arial,sans-serif" font-size="15" font-weight="700">Priorités de la semaine</text>
+  <text x="299" y="357" fill="#839080" font-family="Arial,sans-serif" font-size="11">Organiser les tâches, avancer étape par étape</text>
+  <rect x="299" y="381" width="515" height="65" rx="10" fill="#202D23"/>
+  <rect x="315" y="398" width="28" height="28" rx="8" fill="#344A30"/>
+  <path d="m323 412 5 5 9-11" stroke="#CDE8A4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="358" y="407" fill="#E5ECE1" font-family="Arial,sans-serif" font-size="12" font-weight="700">Structurer la prochaine étape</text>
+  <text x="358" y="427" fill="#839080" font-family="Arial,sans-serif" font-size="10">Projet personnel</text>
+  <rect x="732" y="401" width="59" height="21" rx="10.5" fill="#344A30"/>
+  <text x="761" y="415" text-anchor="middle" fill="#CDE8A4" font-family="Arial,sans-serif" font-size="9">EN COURS</text>
+  <rect x="299" y="458" width="515" height="65" rx="10" fill="#202D23"/>
+  <rect x="315" y="475" width="28" height="28" rx="8" fill="#344A30"/>
+  <circle cx="329" cy="489" r="7" stroke="#CDE8A4" stroke-width="1.5"/>
+  <text x="358" y="484" fill="#E5ECE1" font-family="Arial,sans-serif" font-size="12" font-weight="700">Faire le point sur mes objectifs</text>
+  <text x="358" y="504" fill="#839080" font-family="Arial,sans-serif" font-size="10">Organisation</text>
+  <rect x="732" y="478" width="59" height="21" rx="10.5" fill="#29372D"/>
+  <text x="761" y="492" text-anchor="middle" fill="#AEB9AD" font-family="Arial,sans-serif" font-size="9">À FAIRE</text>
+  <rect x="299" y="535" width="515" height="65" rx="10" fill="#202D23"/>
+  <rect x="315" y="552" width="28" height="28" rx="8" fill="#344A30"/>
+  <path d="M322 566h14M322 571h9" stroke="#CDE8A4" stroke-width="1.7" stroke-linecap="round"/>
+  <text x="358" y="561" fill="#E5ECE1" font-family="Arial,sans-serif" font-size="12" font-weight="700">Préparer la prochaine revue</text>
+  <text x="358" y="581" fill="#839080" font-family="Arial,sans-serif" font-size="10">Planification</text>
+  <rect x="732" y="555" width="59" height="21" rx="10.5" fill="#29372D"/>
+  <text x="761" y="569" text-anchor="middle" fill="#AEB9AD" font-family="Arial,sans-serif" font-size="9">À FAIRE</text>
+  <rect x="855" y="298" width="306" height="330" rx="15" fill="#18231B" stroke="#9BC765" stroke-opacity=".16"/>
+  <text x="880" y="334" fill="#F1F2EB" font-family="Arial,sans-serif" font-size="15" font-weight="700">Répartition</text>
+  <text x="880" y="357" fill="#839080" font-family="Arial,sans-serif" font-size="11">Un rythme qui reste lisible</text>
+  <path d="M1008 404a76 76 0 1 1-53.7 22.3" stroke="#2B3A2D" stroke-width="15" stroke-linecap="round"/>
+  <path d="M954.3 426.3A76 76 0 0 1 1070 445" stroke="url(#accent)" stroke-width="15" stroke-linecap="round"/>
+  <text x="1008" y="458" text-anchor="middle" fill="#F1F2EB" font-family="Arial,sans-serif" font-size="18" font-weight="700">Focus</text>
+  <text x="1008" y="478" text-anchor="middle" fill="#839080" font-family="Arial,sans-serif" font-size="10">par projet</text>
+  <path d="M880 520h256" stroke="#9BC765" stroke-opacity=".14"/>
+  <circle cx="891" cy="548" r="4" fill="#B8DC84"/>
+  <text x="905" y="552" fill="#AEB9AD" font-family="Arial,sans-serif" font-size="11">Tâches suivies</text>
+  <circle cx="891" cy="579" r="4" fill="#718A67"/>
+  <text x="905" y="583" fill="#AEB9AD" font-family="Arial,sans-serif" font-size="11">Projets actifs</text>
+</svg>
