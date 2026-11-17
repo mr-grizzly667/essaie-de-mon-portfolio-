@@ -3,35 +3,35 @@
   <desc id="desc">Portfolio d'Arnaud Koffi, développement web, réseaux et infrastructures IT à Abidjan.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#17281D"/><stop offset="1" stop-color="#101713"/>
+      <stop stop-color="#E5ECE6"/><stop offset="1" stop-color="#F0F4F0"/>
     </linearGradient>
     <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#C5E89A"/><stop offset="1" stop-color="#8FBC59"/>
+      <stop stop-color="#9BCDA9"/><stop offset="1" stop-color="#347653"/>
     </linearGradient>
     <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
-      <path d="M44 0H0V44" fill="none" stroke="#9BC765" stroke-opacity=".055" stroke-width="1"/>
+      <path d="M44 0H0V44" fill="none" stroke="#347653" stroke-opacity=".055" stroke-width="1"/>
     </pattern>
-    <g id="gmark" fill="none" stroke="#9BC765" stroke-width="34" stroke-linecap="round" stroke-linejoin="round">
+    <g id="gmark" fill="none" stroke="#347653" stroke-width="34" stroke-linecap="round" stroke-linejoin="round">
       <path d="M190 66 A78 78 0 1 0 202 157 H151"/>
-      <circle cx="151" cy="157" r="15" fill="#9BC765" stroke="none"/>
+      <circle cx="151" cy="157" r="15" fill="#8060AD" stroke="none"/>
     </g>
   </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
   <rect width="1200" height="630" fill="url(#grid)"/>
-  <circle cx="1040" cy="310" r="246" fill="none" stroke="#9BC765" stroke-opacity=".055" stroke-width="1"/>
-  <circle cx="1040" cy="310" r="194" fill="none" stroke="#9BC765" stroke-opacity=".05" stroke-width="1"/>
-  <g transform="translate(830 98) scale(1.36)" opacity=".14"><use href="#gmark"/></g>
-  <rect x="78" y="82" width="76" height="76" rx="20" fill="#263923" stroke="#9BC765" stroke-opacity=".35"/>
+  <circle cx="1040" cy="310" r="246" fill="none" stroke="#8060AD" stroke-opacity=".1" stroke-width="1.5"/>
+  <circle cx="1040" cy="310" r="194" fill="none" stroke="#347653" stroke-opacity=".1" stroke-width="1"/>
+  <g transform="translate(830 98) scale(1.36)" opacity=".08"><use href="#gmark"/></g>
+  <rect x="78" y="82" width="76" height="76" rx="20" fill="#DCE7DE" stroke="#347653" stroke-opacity=".24"/>
   <g transform="translate(94 98) scale(.25)">
     <g fill="none" stroke="url(#accent)" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"><path d="M190 66 A78 78 0 1 0 202 157 H151"/></g>
-    <circle cx="151" cy="157" r="15" fill="#9BC765"/>
+    <circle cx="151" cy="157" r="15" fill="#8060AD"/>
   </g>
-  <text x="178" y="139" fill="#F1F2EB" font-family="Arial,sans-serif" font-size="29" font-weight="700" letter-spacing="-.7">mr-grizzly</text>
-  <text x="80" y="270" fill="#9BC765" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="2.5">PORTFOLIO / ARNAUD KOFFI</text>
-  <text x="76" y="370" fill="#F1F2EB" font-family="Arial,sans-serif" font-size="65" font-weight="700" letter-spacing="-2.5">Construire.</text>
-  <text x="76" y="445" fill="#F1F2EB" font-family="Arial,sans-serif" font-size="65" font-weight="700" letter-spacing="-2.5">Connecter.</text>
-  <text x="76" y="520" fill="#F1F2EB" font-family="Arial,sans-serif" font-size="65" font-weight="700" letter-spacing="-2.5">Innover<tspan fill="#9BC765">.</tspan></text>
-  <path d="M79 560H520" stroke="#9BC765" stroke-opacity=".5"/>
-  <text x="80" y="592" fill="#B9C4B6" font-family="Arial,sans-serif" font-size="18">Développement web · Réseaux &amp; infrastructures IT</text>
-  <text x="1115" y="592" text-anchor="end" fill="#98A593" font-family="Arial,sans-serif" font-size="13" letter-spacing="1.5">ABIDJAN · CÔTE D'IVOIRE</text>
+  <text x="178" y="139" fill="#193D2D" font-family="Arial,sans-serif" font-size="29" font-weight="700" letter-spacing="-.7">mr-grizzly</text>
+  <text x="80" y="270" fill="#70519D" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="2.5">PORTFOLIO / ARNAUD KOFFI</text>
+  <text x="76" y="370" fill="#193D2D" font-family="Arial,sans-serif" font-size="65" font-weight="700" letter-spacing="-2.5">Construire.</text>
+  <text x="76" y="445" fill="#193D2D" font-family="Arial,sans-serif" font-size="65" font-weight="700" letter-spacing="-2.5">Connecter.</text>
+  <text x="76" y="520" fill="#193D2D" font-family="Arial,sans-serif" font-size="65" font-weight="700" letter-spacing="-2.5">Innover<tspan fill="#8060AD">.</tspan></text>
+  <path d="M79 560H520" stroke="#347653" stroke-opacity=".35"/>
+  <text x="80" y="592" fill="#52665A" font-family="Arial,sans-serif" font-size="18">Développement web · Réseaux &amp; infrastructures IT</text>
+  <text x="1115" y="592" text-anchor="end" fill="#6B7C70" font-family="Arial,sans-serif" font-size="13" letter-spacing="1.5">ABIDJAN · CÔTE D'IVOIRE</text>
 </svg>

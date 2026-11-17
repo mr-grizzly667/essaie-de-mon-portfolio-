@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title">
   <title id="title">mr-grizzly — icône</title>
-  <rect width="512" height="512" fill="#101713"/>
-  <g transform="translate(93 93) scale(1.27)" fill="none" stroke="#9BC765" stroke-width="34" stroke-linecap="round" stroke-linejoin="round">
+  <rect width="512" height="512" fill="#E5ECE6"/>
+  <g transform="translate(93 93) scale(1.27)" fill="none" stroke="#347653" stroke-width="34" stroke-linecap="round" stroke-linejoin="round">
     <path d="M190 66 A78 78 0 1 0 202 157 H151"/>
   </g>
-  <circle cx="284.77" cy="292.39" r="19.05" fill="#9BC765"/>
+  <circle cx="284.77" cy="292.39" r="19.05" fill="#8060AD"/>
 </svg>

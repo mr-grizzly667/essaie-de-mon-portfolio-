@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#101713">
-<title>Arnaud Koffi (mr-grizzly) — Développement web &amp; réseaux</title>
+<meta name="theme-color" content="#d7e1d9">
+<title>Arnaud Koffi (mr-grizzly) | Développement web &amp; réseaux</title>
 <meta name="description" content="Je m'appelle Arnaud Koffi, diplômé en Génie Informatique à Abidjan. Je travaille sur NIC.CI à l'ARTCI et je m'intéresse au web et aux réseaux.">
 <link rel="canonical" href="https://essaie-de-mon-portfolio.vercel.app/">
-<meta property="og:title" content="Arnaud Koffi — mr-grizzly">
+<meta property="og:title" content="Arnaud Koffi | mr-grizzly">
 <meta property="og:description" content="Portfolio d'Arnaud Koffi : développement web, réseaux et infrastructures IT à Abidjan.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://essaie-de-mon-portfolio.vercel.app/">
@@ -17,9 +17,9 @@
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="mr-grizzly — portfolio d'Arnaud Koffi, développement web, réseaux et infrastructures IT">
+<meta property="og:image:alt" content="mr-grizzly, portfolio d'Arnaud Koffi, développement web, réseaux et infrastructures IT">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Arnaud Koffi — mr-grizzly">
+<meta name="twitter:title" content="Arnaud Koffi | mr-grizzly">
 <meta name="twitter:description" content="Portfolio d'Arnaud Koffi : développement web, réseaux et infrastructures IT à Abidjan.">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/mr-grizzly667/essaie-de-mon-portfolio-/main/assets/mr-grizzly-og.png">
 <link rel="icon" type="image/svg+xml" href="/assets/mr-grizzly-symbol.svg">
@@ -27,14 +27,12 @@
 <link rel="manifest" href="/assets/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,600;1,700;1,800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div class="grain"></div>
-
-<!-- ================= NAV ================= -->
+<!-- Nav -->
 <header class="nav" id="nav">
   <div class="nav__inner">
     <a href="#top" class="nav__logo">
@@ -42,32 +40,32 @@
       <span class="nav__logo-name">mr-grizzly<span class="nav__logo-dot">.ci</span></span>
     </a>
     <nav class="nav__links" id="navLinks">
-      <a href="#about"><span class="nav__num">01</span>À propos</a>
-      <a href="#skills"><span class="nav__num">02</span>Stack</a>
-      <a href="#experience"><span class="nav__num">03</span>Parcours</a>
-      <a href="#projects"><span class="nav__num">04</span>Projets</a>
-      <a href="#initiatives"><span class="nav__num">05</span>Initiatives</a>
-      <a href="#contact"><span class="nav__num">06</span>Contact</a>
+      <a href="#about">À propos</a>
+      <a href="#skills">Stack</a>
+      <a href="#experience">Parcours</a>
+      <a href="#projects">Projets</a>
+      <a href="#initiatives">Initiatives</a>
+      <a href="#contact">Contact</a>
     </nav>
     <a href="#contact" class="nav__cta">Me contacter</a>
     <button class="nav__burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </div>
+  <span class="nav__progress" id="navProgress" aria-hidden="true"></span>
 </header>
 
 <main id="top">
 
-  <!-- ================= HERO ================= -->
+  <!-- Hero -->
   <section class="hero" id="hero">
-    <div class="hero-gridline" aria-hidden="true"></div>
     <div class="hero__inner">
       <div class="hero__text">
         <p class="eyebrow"><span class="eyebrow__pulse"></span> Ouvert aux opportunités et aux projets web</p>
         <p class="hero-kicker">BONJOUR, JE SUIS</p>
         <h1 class="hero__title">
-          ARNAUD<br>
-          <span class="hero__accent">KOFFI</span><b class="hero__period">.</b>
+          <span class="hero-title-line"><span class="hero-title-line__in">ARNAUD</span></span>
+          <span class="hero-title-line"><span class="hero-title-line__in"><span class="hero__accent">KOFFI</span><b class="hero__period">.</b></span></span>
         </h1>
         <div class="hero-role"><span></span><span>Génie informatique · Réseaux &amp; développement web</span></div>
         <p class="hero__lead">
@@ -82,19 +80,17 @@
           </a>
           <a href="#contact" class="btn btn--ghost">Discutons</a>
         </div>
-        <div class="hero-meta"><span>⌖ Abidjan, Côte d'Ivoire</span><span class="meta-line"></span><span>ARTCI · NIC.CI</span></div>
+        <div class="hero-meta"><span>Abidjan, Côte d'Ivoire</span><span class="meta-line"></span><span>ARTCI · NIC.CI</span></div>
       </div>
 
       <div class="hero__panel">
-        <div class="hero-side-note" aria-hidden="true">THE POWER OF<br><strong>HARD WORK.</strong></div>
         <div class="whois" id="whois">
           <div class="whois__bar">
-            <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
-            <span class="whois__title">profil.txt</span>
+            <span class="whois__title">Profil</span>
           </div>
           <div class="whois__body" role="list" aria-label="Quelques repères sur mon parcours">
             <div role="listitem"><span class="k">Nom</span><span class="v">Arnaud Koffi Toa</span></div>
-            <div role="listitem"><span class="k">Formation</span><span class="v">Génie Informatique — IUA</span></div>
+            <div role="listitem"><span class="k">Formation</span><span class="v">Génie Informatique, IUA</span></div>
             <div role="listitem"><span class="k">Stage</span><span class="v">ARTCI · NIC.CI</span></div>
             <div role="listitem"><span class="k">Travail</span><span class="v">Développement web</span></div>
             <div role="listitem"><span class="k">Intérêts</span><span class="v">Réseaux · infrastructures</span></div>
@@ -111,9 +107,9 @@
     <div class="hero-watermark" aria-hidden="true">努力</div>
   </section>
 
-  <div class="marquee" aria-label="Discipline, curiosité, création, progrès"><div aria-hidden="true">DISCIPLINE <b>✳</b> CURIOSITÉ <b>✳</b> CRÉATION <b>✳</b> PROGRÈS <b>✳</b> DISCIPLINE <b>✳</b> CURIOSITÉ <b>✳</b> CRÉATION <b>✳</b> PROGRÈS <b>✳</b></div></div>
+  <div class="marquee" aria-label="Discipline, curiosité, création, progrès"><div aria-hidden="true">DISCIPLINE <b>·</b> CURIOSITÉ <b>·</b> CRÉATION <b>·</b> PROGRÈS <b>·</b> DISCIPLINE <b>·</b> CURIOSITÉ <b>·</b> CRÉATION <b>·</b> PROGRÈS <b>·</b></div></div>
 
-  <!-- ================= ABOUT ================= -->
+  <!-- About -->
   <section class="section" id="about">
     <div class="section__head">
       <span class="section__num">01</span>
@@ -156,19 +152,19 @@
       </div>
       <div class="focus-grid">
         <details class="focus-card">
-          <summary><span class="focus-card__art"><img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Baies de serveurs dans une salle informatique" loading="lazy" decoding="async"></span><span class="focus-card__index">01 / INFRA</span><span class="focus-card__title">Réseaux &amp; infrastructures</span><span class="focus-card__hint">Explorer <b>↗</b></span></summary>
+          <summary><span class="focus-card__art"><img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Baies de serveurs dans une salle informatique" loading="lazy" decoding="async"></span><span class="focus-card__index">Infra</span><span class="focus-card__title">Réseaux &amp; infrastructures</span><span class="focus-card__hint">Explorer <b>↗</b></span></summary>
           <p>J'aime comprendre comment les machines communiquent, comment un réseau est organisé et ce qui permet à un service de rester disponible.</p>
         </details>
         <details class="focus-card">
-          <summary><span class="focus-card__art"><img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Écran affichant des données liées à la cybersécurité" loading="lazy" decoding="async"></span><span class="focus-card__index">02 / SÉCURITÉ</span><span class="focus-card__title">Cybersécurité</span><span class="focus-card__hint">Explorer <b>↗</b></span></summary>
+          <summary><span class="focus-card__art"><img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Écran affichant des données liées à la cybersécurité" loading="lazy" decoding="async"></span><span class="focus-card__index">Sécurité</span><span class="focus-card__title">Cybersécurité</span><span class="focus-card__hint">Explorer <b>↗</b></span></summary>
           <p>C'est un domaine que je veux approfondir : protection des systèmes, sécurité des applications et bonnes pratiques au quotidien.</p>
         </details>
         <details class="focus-card">
-          <summary><span class="focus-card__art"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Poste de travail de développement web" loading="lazy" decoding="async"></span><span class="focus-card__index">03 / PRODUIT</span><span class="focus-card__title">Développement web</span><span class="focus-card__hint">Explorer <b>↗</b></span></summary>
+          <summary><span class="focus-card__art"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Poste de travail de développement web" loading="lazy" decoding="async"></span><span class="focus-card__index">Produit</span><span class="focus-card__title">Développement web</span><span class="focus-card__hint">Explorer <b>↗</b></span></summary>
           <p>Je travaille sur des applications web avec React, TypeScript, NestJS et MySQL/Prisma, notamment dans le cadre de mon stage sur NIC.CI.</p>
         </details>
         <details class="focus-card">
-          <summary><span class="focus-card__art"><img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Équipe en train de collaborer sur un projet" loading="lazy" decoding="async"></span><span class="focus-card__index">04 / IMPACT</span><span class="focus-card__title">Projets numériques</span><span class="focus-card__hint">Explorer <b>↗</b></span></summary>
+          <summary><span class="focus-card__art"><img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Équipe en train de collaborer sur un projet" loading="lazy" decoding="async"></span><span class="focus-card__index">Impact</span><span class="focus-card__title">Projets numériques</span><span class="focus-card__hint">Explorer <b>↗</b></span></summary>
           <p>J'aime travailler avec d'autres personnes sur une idée, la préciser, puis participer à sa réalisation.</p>
         </details>
       </div>
@@ -181,7 +177,7 @@
     </div>
   </section>
 
-  <!-- ================= SKILLS ================= -->
+  <!-- Skills -->
   <section class="section section--alt" id="skills">
     <div class="section__head">
       <span class="section__num">02</span>
@@ -191,7 +187,7 @@
     <p class="stack__intro">Des outils choisis pour concevoir des interfaces utiles, structurer les données et faire tourner des services web.</p>
     <div class="stack">
       <article class="stack__col">
-        <div class="stack__top"><span class="stack__number">01 / INTERFACE</span><span class="stack__symbol" aria-hidden="true">↗</span></div>
+        <div class="stack__top"><span class="stack__number">Interface</span></div>
         <h3 class="stack__label">Développement web</h3>
         <p class="stack__note">Des interfaces réactives, du navigateur jusqu'aux API.</p>
         <ul class="tag-list" aria-label="Technologies de développement web">
@@ -200,7 +196,7 @@
         <p class="stack__context"><span>EN PRATIQUE</span>NIC.CI · projets web</p>
       </article>
       <article class="stack__col">
-        <div class="stack__top"><span class="stack__number">02 / DONNÉES</span><span class="stack__symbol" aria-hidden="true">⌘</span></div>
+        <div class="stack__top"><span class="stack__number">Données</span></div>
         <h3 class="stack__label">Données &amp; architecture</h3>
         <p class="stack__note">Organiser les données et structurer les échanges entre services.</p>
         <ul class="tag-list" aria-label="Outils de données et d'architecture">
@@ -209,7 +205,7 @@
         <p class="stack__context"><span>EN PRATIQUE</span>Modélisation · intégration</p>
       </article>
       <article class="stack__col">
-        <div class="stack__top"><span class="stack__number">03 / DÉPLOIEMENT</span><span class="stack__symbol" aria-hidden="true">⌁</span></div>
+        <div class="stack__top"><span class="stack__number">Déploiement</span></div>
         <h3 class="stack__label">Serveurs &amp; déploiement</h3>
         <p class="stack__note">Configurer l'environnement et accompagner la mise en service.</p>
         <ul class="tag-list" aria-label="Outils de serveurs et déploiement">
@@ -218,7 +214,7 @@
         <p class="stack__context"><span>EN PRATIQUE</span>Configuration · maintenance</p>
       </article>
       <article class="stack__col">
-        <div class="stack__top"><span class="stack__number">04 / INFRASTRUCTURE</span><span class="stack__symbol" aria-hidden="true">⌗</span></div>
+        <div class="stack__top"><span class="stack__number">Infrastructure</span></div>
         <h3 class="stack__label">Réseaux &amp; systèmes</h3>
         <p class="stack__note">Comprendre les infrastructures et assurer le suivi du support IT.</p>
         <ul class="tag-list" aria-label="Compétences en réseaux et systèmes">
@@ -229,7 +225,7 @@
     </div>
   </section>
 
-  <!-- ================= EXPERIENCE ================= -->
+  <!-- Experience -->
   <section class="section" id="experience">
     <div class="section__head">
       <span class="section__num">03</span>
@@ -238,9 +234,9 @@
 
     <div class="timeline">
       <div class="timeline__item">
-        <div class="timeline__date">2025 — présent</div>
+        <div class="timeline__date">2025 – présent</div>
         <div class="timeline__content">
-          <h3>Stagiaire Développeur — ARTCI / NIC.CI</h3>
+          <h3>Stagiaire Développeur, ARTCI / NIC.CI</h3>
           <p>
             À l'ARTCI, je participe au développement et au suivi de NIC.CI, le registre du domaine .ci.
             Je travaille aussi sur la documentation technique, les configurations serveur et les échanges
@@ -249,9 +245,9 @@
         </div>
       </div>
       <div class="timeline__item">
-        <div class="timeline__date">2024 — 2025</div>
+        <div class="timeline__date">2024 – 2025</div>
         <div class="timeline__content">
-          <h3>Mémoire de Licence — IUA</h3>
+          <h3>Mémoire de Licence, IUA</h3>
           <p>
             Pour mon mémoire, j'ai conçu une application de gestion des inscriptions étudiantes.
             Elle permet de suivre les dossiers et les paiements Mobile Money (Wave, Orange Money, MTN).
@@ -262,7 +258,7 @@
       <div class="timeline__item">
         <div class="timeline__date">En continu</div>
         <div class="timeline__content">
-          <h3>Co-fondateur — Skanfy</h3>
+          <h3>Co-fondateur, Skanfy</h3>
           <p>
             Avec un collaborateur, je travaille sur un service qui aide à retrouver des objets grâce à un QR code.
             Nous avons défini le fonctionnement du service, les partenariats possibles et son modèle économique.
@@ -272,7 +268,7 @@
     </div>
   </section>
 
-  <!-- ================= PROJECTS ================= -->
+  <!-- Projects -->
   <section class="section section--alt" id="projects">
     <div class="section__head">
       <span class="section__num">04</span>
@@ -281,7 +277,6 @@
 
     <div class="projects">
       <article class="project" data-visual="DASHBOARD">
-        <div class="project__index">P.01</div>
         <div class="project__visual project__visual--dashboard"><img src="assets/dashboard-apercu.svg" alt="Aperçu visuel du tableau de bord de suivi des tâches" loading="lazy" decoding="async"></div>
         <h3>Centre de pilotage personnel</h3>
         <p>
@@ -294,7 +289,6 @@
       </article>
 
       <article class="project" data-visual="SKANFY">
-        <div class="project__index">P.02</div>
         <div class="project__visual project__visual--skanfy"><img src="assets/skanfy-affiche.png" alt="Affiche Skanfy présentant le service d'identification et de récupération d'objets par QR code" loading="lazy" decoding="async"></div>
         <h3>Skanfy</h3>
         <p>
@@ -307,7 +301,6 @@
       </article>
 
       <article class="project" data-visual="NIC.CI">
-        <div class="project__index">P.03</div>
         <div class="project__visual project__visual--nic"><img src="assets/nic-ci-logo.png" alt="Logo du domaine national .CI" loading="lazy" decoding="async"></div>
         <h3>Documentation technique NIC.CI</h3>
         <p>
@@ -320,9 +313,8 @@
       </article>
 
       <article class="project" data-visual="IUA">
-        <div class="project__index">P.04</div>
         <div class="project__visual project__visual--iua"><img src="https://www.iuaci.org/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-12-at-19.56.21.jpeg" alt="Logo officiel de l'Institut Universitaire d'Abidjan (IUA)" loading="lazy" decoding="async"></div>
-        <h3>Gestion des inscriptions — IUA</h3>
+        <h3>Gestion des inscriptions, IUA</h3>
         <p>
           Mon mémoire de licence : une application web pour gérer les inscriptions étudiantes et leurs paiements
           Mobile Money, conçue avec MERISE et développée en PHP MVC et MySQL.
@@ -334,7 +326,7 @@
     </div>
   </section>
 
-  <!-- ================= INITIATIVES ================= -->
+  <!-- Initiatives -->
   <section class="section section--alt" id="initiatives">
     <div class="section__head">
       <span class="section__num">05</span>
@@ -353,7 +345,7 @@
           <span class="initiative-card__visual-label">MR GRIZZLY / ON AIR</span>
         </div>
         <div class="initiative-card__body">
-          <p class="initiative-card__eyebrow">01 — Podcast</p>
+          <p class="initiative-card__eyebrow">Podcast</p>
           <h3>MR GRIZZLY PODCAST</h3>
           <p class="initiative-card__tagline">Des sujets qui méritent une vraie discussion.</p>
           <p>Avec MR GRIZZLY, j'ai envie de parler d'intelligence artificielle, de technologie, d'entrepreneuriat, de développement personnel et de société. J'aimerais qu'on puisse y confronter des idées et parler franchement de sujets qui font débat.</p>
@@ -367,7 +359,7 @@
           <span class="initiative-card__visual-label">APPRENDRE / PARTAGER</span>
         </div>
         <div class="initiative-card__body">
-          <p class="initiative-card__eyebrow">02 — Création</p>
+          <p class="initiative-card__eyebrow">Création</p>
           <h3>CRÉATION DE CONTENU</h3>
           <p class="initiative-card__tagline">Je partage ce que j'apprends en chemin.</p>
           <p>Sur TikTok, je parle de mon parcours en informatique, de mes expériences en stage et des sujets techniques que je découvre. Je partage aussi quelques moments du quotidien.</p>
@@ -381,7 +373,7 @@
           <span class="initiative-card__visual-label">IMAGINER / CONSTRUIRE</span>
         </div>
         <div class="initiative-card__body">
-          <p class="initiative-card__eyebrow">03 — Pour vos projets</p>
+          <p class="initiative-card__eyebrow">Pour vos projets</p>
           <h3>CONCEPTION &amp; DÉVELOPPEMENT WEB</h3>
           <p class="initiative-card__tagline">Vous avez besoin d'un site pour votre activité ?</p>
           <p>Je réalise des sites web pour particuliers, entrepreneurs, associations et entreprises. On commence par parler de votre besoin, puis on choisit ensemble la solution adaptée.</p>
@@ -397,7 +389,7 @@
     </div>
   </section>
 
-  <!-- ================= CONTACT ================= -->
+  <!-- Contact -->
   <section class="section contact" id="contact">
     <div class="section__head">
       <span class="section__num">06</span>
@@ -452,7 +444,7 @@
   <section class="footer-cta" aria-labelledby="footerCtaTitle">
     <div class="footer-cta__inner">
       <p class="footer-cta__eyebrow"><span></span> ON PASSE À L'ACTION ?</p>
-      <h2 id="footerCtaTitle">LE TRAVAIL<br>CONTINUE<span>.</span></h2>
+      <h2 id="footerCtaTitle">LE TRAVAIL<br>CONTINUE<span class="footer-cta__dot">.</span></h2>
       <p class="footer-cta__copy">Vous avez une idée, un site à créer ou une opportunité à partager&nbsp;? Parlons-en et voyons comment lui donner vie.</p>
       <a class="footer-cta__button" href="https://wa.me/2250172136545?text=Bonjour%20mr-grizzly%2C%20je%20vous%20contacte%20depuis%20votre%20portfolio." target="_blank" rel="noopener noreferrer">
         <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M16 3.2A12.7 12.7 0 0 0 5.1 22.4L3.4 28.7l6.5-1.7A12.8 12.8 0 1 0 16 3.2Zm0 23.2c-2 0-4-.5-5.7-1.6l-.4-.2-3.8 1 1-3.7-.3-.4A10.4 10.4 0 1 1 16 26.4Zm5.7-7.8c-.3-.2-1.8-.9-2.1-1s-.5-.2-.7.2-.8 1-.9 1.1-.3.2-.6.1a8.5 8.5 0 0 1-2.5-1.5 9.4 9.4 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.6l.5-.6.3-.5c.1-.2 0-.4 0-.6s-.7-1.7-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.6s1.1 3 1.2 3.2a12.6 12.6 0 0 0 4.9 4.3c.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.8-.7 2.1-1.4.3-.7.3-1.3.2-1.4l-.5-.2Z"/></svg>
